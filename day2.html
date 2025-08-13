@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navebar{
+            background-color: darkcyan;
+            display: flex;
+        }
+        .tabs{
+            display: flex;
+            position: absolute;
+            right: 10px;
+        }
+
+        .tab{
+            padding: 15px;
+        }
+        .tab:hover{
+           border: 5px solid rgb(4, 83, 78);
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .photo{ 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px; 
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        .about p::first-letter{
+            font-size: 20px;
+            color: goldenrod
+        }
+        .about{
+            text-align: center;
+        }
+        .cards{
+              display: grid;
+              align-items: center;
+  grid-template-columns: auto auto auto;
+        }
+        .card{
+            justify-content: center;
+            align-items: center;
+            border: 2px solid rgb(4, 83, 78);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding-right: 5px;
+            padding-top: 5px;
+            padding-left: 2px;
+            margin: auto;
+            margin-top: 100px;
+            
+        }
+        .card p{
+            text-align: center;
+        }
+        .footer{
+            background-color: darkcyan;
+        }
+        </style>
+       
+</head>
+<body>
+    <section>
+    <div class="navebar">
+        <h1>MYPORTFOLIO</h1>
+        <div class="tabs">
+            <div class="tab">Home</div>
+            <div class="tab">Home</div>
+            <div class="tab">Home</div>
+            <div class="tab">Home</div>
+            
+        </div>
+
+    </div>
+    </section>
+    
+    <div>
+        <section style="justify-content: center;">
+        <h1 style="text-align: center;"> Myself</h1>
+        <div class="photo">
+            <img src="krishn.png" alt="Krsihn">
+            
+        </div>
+            <article class="about">
+                <p>
+                    Krishn is a passionate web developer with a knack for designing stunning websites. His expertise in CSS and frontend technologies makes him a standout in the field.
+                </p>
+            </article>
+        </section>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div>
+        <section>
+        <h1 style="text-align: center;">My Projects</h1>
+        <div class="cards">
+            <div class="card">
+                <img src="coding.png" alt="">
+                <p>Fullstack Project</p>
+            </div>
+            <div class="card">
+                <img src="coding.png" alt="">
+                <p>Fullstack Project</p>
+            </div><div class="card">
+                <img src="coding.png" alt="">
+                <p>Fullstack Project</p>
+            </div><div class="card">
+                <img src="coding.png" alt="">
+                <p>Fullstack Project</p>
+            </div>
+        </div>
+        </section>
+
+        <section>
+            <footer class="footer">
+                <h1>&copy;All rights reversed</h1>
+            </footer>
+        </section>
+    </div>
+</body>
+</html>
